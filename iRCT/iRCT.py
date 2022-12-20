@@ -11,6 +11,7 @@ class iRCT:
 
     def calculateRelationVal(self):
         """
+        :param self: the instance of the iRCT class
         Returns the value calculated using the matching estimators method
         """
 
