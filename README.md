@@ -35,9 +35,11 @@ This section is to give a simple explanation of how to use the causalLearn.py in
 ![CausalLearn step1](https://user-images.githubusercontent.com/79263753/215180723-944e1c79-215b-4aa7-b1f6-a716816a578b.png)
 
 2. Create the object of the algorithm you want to use. For PC, only the dataframe is required as the output will be in the terminal. For both GES and FCI, both the dataframe and the location of the output for the png are required, as both these functions produce pngs as their respective outputs.
+
 ![CausalLearn step2](https://user-images.githubusercontent.com/79263753/215180872-17d35776-2b81-4c7f-a09f-184e9979191f.png)
 
 3. Run the program. For the PC algorithm, as it uses r as its basis, it will ask for CRAN location, it is recommended you pick the location from the list that is closest to you.
+
 ![CausalLearn step3](https://user-images.githubusercontent.com/79263753/215181260-e1547870-ae0a-44f5-b7d0-0d0ba72f9e37.png)
 
 The current causalLearn.py has examples of all the current algorithms using the COVID3_4Nodes3.dat dataset for the examples.
