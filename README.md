@@ -4,11 +4,11 @@ This package combines two other causal learning packages, pycausal and causallea
 Dependencies:
 - Pandas
 - Causallearn
-- Pycausal
-
-## DISCLAIMER:
-
-This package is not complete and pycausal, as well as its associated causal learning methods, is still being implemented.
+- rpy2
+- numpy
+- matplotlib
+- pydot
+- 
 
 ### Algorithm's available
 
