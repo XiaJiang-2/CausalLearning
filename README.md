@@ -8,7 +8,6 @@ Dependencies:
 - numpy
 - matplotlib
 - pydot
-- 
 
 ### Algorithm's available
 
