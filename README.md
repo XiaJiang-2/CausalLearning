@@ -34,9 +34,9 @@ If you have any further issues in determing how these functions operate or how t
 
 This section is to give a simple explanation of how to use the causalLearn.py in order to implement any of the currently available functions for your own dataset.
 
-1. Import your dataset via pandas and ensure all values are numeric. In the sample causalLearn.py, most of the values are "negative" or "positive", these are then adjusted to be 0 and 1, respectively, in order for the algorithms to properly work.
+1. Set the location for your dataset. Import your dataset using the file location and pandas, and ensure all values in your dataset are numeric. In the sample causalLearn.py, most of the values are "negative" or "positive", these are then adjusted to be 0 and 1, respectively, in order for the algorithms to properly work.
 
-![CausalLearn step1](https://user-images.githubusercontent.com/79263753/215180723-944e1c79-215b-4aa7-b1f6-a716816a578b.png)
+![Image 1 Causal Learning](https://user-images.githubusercontent.com/79263753/216166746-8aad9636-844d-4d95-ad61-09dcd3f2ee91.png)
 
 2. Create the object of the algorithm you want to use. For PC, only the datasets location is required as the output will be in the terminal. For both GES and FCI, both the dataframe and the location of the output for the png are required, as both these functions produce pngs as their respective outputs. For both FGES and rFCI, the dataset location is required (the dataset is also required to be a txt file), the delimiter used for the file (i.e. colon, comma, pipe, semicolon, space, tab, whitespace), and the output location, as both these functions produce txt files as their respective outputs.
 
