@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Causal Learning Home Page</title>
+{% endblock %}
+
+{% block body %}
+    <div id="upload">
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <br/>
+
+            <input type="submit" value="Upload">
+        </form>
+
+        
+    </div>
+
+    <div id="body">
+        <p>Hello and welcome to the Causal Learning webpage!</p>
+        <p>Please note the following before uploading a file:</p>
+        <li>All data in the file must be numerical.</li>
+        <li>The currently accepted file formats are: txt, csv, xlsx, and dat</li>
+    </div>
+{% endblock %}

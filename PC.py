@@ -9,7 +9,7 @@ from rpy2.robjects.packages import importr, data
 class PC:
     def __init__(self, fileLocation):
         self.fl = fileLocation
-        self.timeToComplete = self.calculatePC()
+        self.timeToComplete, self.output = self.calculatePC()
 
     def calculatePC(self): 
 
@@ -29,11 +29,10 @@ class PC:
                 mat <- data.matrix(df)
                 skeleton <- pc.skel(mat)
                 DAG <- pc.or(skeleton)
-                print(DAG$G)
+                return(DAG$G)
             }'''
         
         r_func = robjects.r(r_func_code)
-        r_func(self.fl)
-
-        # Return the length of time the algorithm took to run
-        return time.time()-start
+        x = r_func(self.fl)
+        # Return the length of time the algorithm took to run and the string representation of the adjacency matrix
+        return time.time()-start, str(x)
