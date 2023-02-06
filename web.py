@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 import os
 import pandas as pd
+from pathlib import Path
 
 import PC
 import rFCI
@@ -81,6 +82,7 @@ def rFCI_Page():
 
         rfciObject = rFCI.rFCI(fileName, delimiter, "/")
         os.remove(fileName)
+        #Add way to get text and add to html output file
         return render_template("rFCI_Output.html")
 
 @app.route("/FGES", methods=['GET', 'POST'])
@@ -94,8 +96,9 @@ def FGES_Page():
         fileName = request.form['fileName']
         delimiter = request.form['delim']
 
-        fgesObject = FGES.FGES(fileName, delimiter, "/")
+        fgesObject = FGES.FGES(fileName, delimiter, "templates/FGES_Output/")
         os.remove(fileName)
+        #Add way to get text and add to html output file
         return render_template("FGES_Output.html")
 
 @app.route("/FCI", methods=['GET', 'POST'])
@@ -111,7 +114,7 @@ def FCI_Page():
 
         df = pd.read_csv(fileName, sep=delimiter)
 
-        fciObject = FCI.FCI(df, "templates/images/FCI_Output.png")
+        fciObject = FCI.FCI(df, "static/images/FCI_Output.png")
         os.remove(fileName)
         return render_template("FCI_Output.html")
 
@@ -128,7 +131,7 @@ def GES_Page():
 
         df = pd.read_csv(fileName, sep=delimiter)
 
-        gesObject = GES.GES(df, "templates/images/GES_Output.png")
+        gesObject = GES.GES(df, "static/images/GES_Output.png")
         os.remove(fileName)
         return render_template("GES_Output.html")
             

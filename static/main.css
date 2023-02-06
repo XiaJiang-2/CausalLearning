@@ -1,0 +1,9 @@
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+#list  p {
+  font: arial;
+  font-size: 14px;
+}
