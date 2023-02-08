@@ -80,10 +80,12 @@ def rFCI_Page():
         fileName = request.form['fileName']
         delimiter = request.form['delim']
 
-        rfciObject = rFCI.rFCI(fileName, delimiter, "/")
+        rfciObject = rFCI.rFCI(fileName, delimiter, "templates/rFCI_Outputs", "rFCI_Result")
+        f = open("templates/rFCI_Outputs/rFCI_Result.txt", 'r')
+        rFCI_Data = f.readlines()
+        f.close()
         os.remove(fileName)
-        #Add way to get text and add to html output file
-        return render_template("rFCI_Output.html")
+        return render_template("rFCI_Output.html", Lines=rFCI_Data)
 
 @app.route("/FGES", methods=['GET', 'POST'])
 def FGES_Page():
@@ -96,10 +98,12 @@ def FGES_Page():
         fileName = request.form['fileName']
         delimiter = request.form['delim']
 
-        fgesObject = FGES.FGES(fileName, delimiter, "templates/FGES_Output/")
+        fgesObject = FGES.FGES(fileName, delimiter, "templates/FGES_Outputs", "FGES_Result")
+        f = open("templates/FGES_Outputs/FGES_Result.txt", 'r')
+        FGES_Data = f.readlines()
+        f.close()
         os.remove(fileName)
-        #Add way to get text and add to html output file
-        return render_template("FGES_Output.html")
+        return render_template("FGES_Output.html", Lines=FGES_Data)
 
 @app.route("/FCI", methods=['GET', 'POST'])
 def FCI_Page():

@@ -1,0 +1,66 @@
+================================================================================
+FGES (Wed, February 08, 2023 01:40:35 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: test.txt
+header: yes
+delimiter: comma
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: FGES
+score: Sem BIC Score
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+addOriginalDataset: no
+faithfulnessAssumed: no
+maxDegree: 100
+meekVerbose: no
+numberResampling: 0
+parallelism: 1
+penaltyDiscount: 1.0
+percentResampleSize: 90
+resamplingEnsemble: 0
+resamplingWithReplacement: no
+semBicRule: 1
+semBicStructurePrior: 0.0
+symmetricFirstStep: no
+verbose: no
+
+
+Wed, February 08, 2023 01:40:35 PM: Start data validation on file test.txt.
+Wed, February 08, 2023 01:40:35 PM: End data validation on file test.txt.
+There are 7 cases and 4 variables.
+
+Wed, February 08, 2023 01:40:35 PM: Start reading in file test.txt.
+Wed, February 08, 2023 01:40:35 PM: Finished reading in file test.txt.
+Wed, February 08, 2023 01:40:35 PM: File test.txt contains 7 cases, 4 variables.
+
+Start search: Wed, February 08, 2023 01:40:35 PM
+End search: Wed, February 08, 2023 01:40:35 PM
+
+================================================================================
+Graph Nodes:
+i;treatment;X;Y
+
+Graph Edges:
+1. X --> i
+2. Y --> i
+3. treatment --- X
+4. treatment --> i
+
+Graph Attributes:
+BIC: 10.278064
+
+Graph Node Attributes:
+BIC: [i: 6.553292;treatment: 9.848396;X: -2.350647;Y: -3.772976]

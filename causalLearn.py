@@ -20,28 +20,30 @@ df = df.replace(to_replace='Negtive', value=0)
 df = df.replace(to_replace='Positive', value=1)
 
 # Create a PC object using the file location, it's output will be printed to the console
-pcObject = PC.PC(fileLocation)
+# pcObject = PC.PC(fileLocation)
 
-# Set the output location for the png of the GES output
-GES_Output_location = 'C:/Users/17172/Desktop/CausalLearning/Outputs/GES_Output_Test.png'
+# # Set the output location for the png of the GES output
+# GES_Output_location = 'C:/Users/17172/Desktop/CausalLearning/Outputs/GES_Output_Test.png'
 
-# Create the GES object, it's output will be saved as a png to the output location specified above
-gesObject = GES.GES(df, GES_Output_location)
+# # Create the GES object, it's output will be saved as a png to the output location specified above
+# gesObject = GES.GES(df, GES_Output_location)
 
-# Set the output location for the png of the FCI output
-FCI_Output_location = 'C:/Users/17172/Desktop/CausalLearning/Outputs/FCI_Output_Test.png'
+# # Set the output location for the png of the FCI output
+# FCI_Output_location = 'C:/Users/17172/Desktop/CausalLearning/Outputs/FCI_Output_Test.png'
 
-# Create the FCI object, it's output will be saved as a png to the output location specified above
-fciObject = FCI.FCI(df, FCI_Output_location)
+# # Create the FCI object, it's output will be saved as a png to the output location specified above
+# fciObject = FCI.FCI(df, FCI_Output_location)
 
 # Set the output location of the output file of the rFCI output
-rFCI_Output_location = 'C:/Users/17172/Desktop/CausalLearning/Outputs'
+rFCI_Output_location = 'templates/rFCI_Outputs'
+rFCI_Output_name = "rFCI_Output"
 
 # Create the rFCI object, it's output will be saved as a txt file to the output location specified above
-rfciObject = rFCI.rFCI(fileLocation, fileDelimiter, rFCI_Output_location)
+rfciObject = rFCI.rFCI(fileLocation, fileDelimiter, rFCI_Output_location, rFCI_Output_name)
 
-# Set the output location of the output file of the FGES output
-FGES_Output_location = 'C:/Users/17172/Desktop/CausalLearning/Outputs'
+# # Set the output location of the output file of the FGES output
+# FGES_Output_location = 'C:/Users/17172/Desktop/CausalLearning/Outputs'
+# FGES_Output_name = "FGES_Output"
 
-# Create the FGES object, it's output will be saved as a txt file to the output location specified above
-fgesObject = FGES.FGES(fileLocation, fileDelimiter, FGES_Output_location)
+# # Create the FGES object, it's output will be saved as a txt file to the output location specified above
+# fgesObject = FGES.FGES(fileLocation, fileDelimiter, FGES_Output_location, FGES_Output_name)

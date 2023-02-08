@@ -6,6 +6,8 @@
 
 {% block body %}
     <div>
-        <a href="/templates/FGES_Output/" download>Download your image here!</a>
+        {% for Line in Lines %}
+        <p>{{ Line }}</p>
+        {% endfor %}
     </div>
 {% endblock %}

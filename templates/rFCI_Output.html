@@ -6,6 +6,8 @@
 
 {% block body %}
     <div>
-        <p>Temp output page for rFCI</p>
+        {% for Line in Lines %}
+        <p> {{ Line }} </p>
+        {% endfor %}
     </div>
 {% endblock %}
