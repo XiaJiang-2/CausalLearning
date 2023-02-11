@@ -1,5 +1,5 @@
 ================================================================================
-FGES (Wed, February 08, 2023 01:40:35 PM)
+FGES (Wed, February 08, 2023 03:36:53 PM)
 ================================================================================
 
 Runtime Parameters
@@ -8,7 +8,7 @@ number of threads: 7
 
 Dataset
 --------------------------------------------------------------------------------
-file: test.txt
+file: COVID3_4Nodes3.txt
 header: yes
 delimiter: comma
 quote char: none
@@ -38,29 +38,28 @@ symmetricFirstStep: no
 verbose: no
 
 
-Wed, February 08, 2023 01:40:35 PM: Start data validation on file test.txt.
-Wed, February 08, 2023 01:40:35 PM: End data validation on file test.txt.
-There are 7 cases and 4 variables.
+Wed, February 08, 2023 03:36:53 PM: Start data validation on file COVID3_4Nodes3.txt.
+Wed, February 08, 2023 03:36:53 PM: End data validation on file COVID3_4Nodes3.txt.
+There are 50000 cases and 4 variables.
 
-Wed, February 08, 2023 01:40:35 PM: Start reading in file test.txt.
-Wed, February 08, 2023 01:40:35 PM: Finished reading in file test.txt.
-Wed, February 08, 2023 01:40:35 PM: File test.txt contains 7 cases, 4 variables.
+Wed, February 08, 2023 03:36:53 PM: Start reading in file COVID3_4Nodes3.txt.
+Wed, February 08, 2023 03:36:54 PM: Finished reading in file COVID3_4Nodes3.txt.
+Wed, February 08, 2023 03:36:54 PM: File COVID3_4Nodes3.txt contains 50000 cases, 4 variables.
 
-Start search: Wed, February 08, 2023 01:40:35 PM
-End search: Wed, February 08, 2023 01:40:35 PM
+Start search: Wed, February 08, 2023 03:36:54 PM
+End search: Wed, February 08, 2023 03:36:54 PM
 
 ================================================================================
 Graph Nodes:
-i;treatment;X;Y
+ED_Visit;Dyspnea;COPD;COVID
 
 Graph Edges:
-1. X --> i
-2. Y --> i
-3. treatment --- X
-4. treatment --> i
+1. COPD --> Dyspnea
+2. COVID --> Dyspnea
+3. Dyspnea --> ED_Visit
 
 Graph Attributes:
-BIC: 10.278064
+BIC: 707348.594709
 
 Graph Node Attributes:
-BIC: [i: 6.553292;treatment: 9.848396;X: -2.350647;Y: -3.772976]
+BIC: [ED_Visit: 220227.007301;Dyspnea: 215426.017839;COPD: 150842.304893;COVID: 120853.264676]

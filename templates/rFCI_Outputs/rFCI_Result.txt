@@ -1,5 +1,5 @@
 ================================================================================
-RFCI (Wed, February 08, 2023 01:33:58 PM)
+RFCI (Wed, February 08, 2023 03:36:18 PM)
 ================================================================================
 
 Runtime Parameters
@@ -34,16 +34,16 @@ resamplingWithReplacement: no
 verbose: no
 
 
-Wed, February 08, 2023 01:33:58 PM: Start data validation on file COVID3_4Nodes3.txt.
-Wed, February 08, 2023 01:33:58 PM: End data validation on file COVID3_4Nodes3.txt.
+Wed, February 08, 2023 03:36:18 PM: Start data validation on file COVID3_4Nodes3.txt.
+Wed, February 08, 2023 03:36:18 PM: End data validation on file COVID3_4Nodes3.txt.
 There are 50000 cases and 4 variables.
 
-Wed, February 08, 2023 01:33:58 PM: Start reading in file COVID3_4Nodes3.txt.
-Wed, February 08, 2023 01:33:58 PM: Finished reading in file COVID3_4Nodes3.txt.
-Wed, February 08, 2023 01:33:58 PM: File COVID3_4Nodes3.txt contains 50000 cases, 4 variables.
+Wed, February 08, 2023 03:36:18 PM: Start reading in file COVID3_4Nodes3.txt.
+Wed, February 08, 2023 03:36:18 PM: Finished reading in file COVID3_4Nodes3.txt.
+Wed, February 08, 2023 03:36:18 PM: File COVID3_4Nodes3.txt contains 50000 cases, 4 variables.
 
-Start search: Wed, February 08, 2023 01:33:58 PM
-End search: Wed, February 08, 2023 01:33:58 PM
+Start search: Wed, February 08, 2023 03:36:18 PM
+End search: Wed, February 08, 2023 03:36:19 PM
 
 ================================================================================
 Graph Nodes:
