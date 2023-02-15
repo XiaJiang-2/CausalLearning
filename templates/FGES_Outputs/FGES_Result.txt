@@ -1,5 +1,5 @@
 ================================================================================
-FGES (Wed, February 08, 2023 03:36:53 PM)
+FGES (Wed, February 15, 2023 03:40:25 PM)
 ================================================================================
 
 Runtime Parameters
@@ -38,16 +38,16 @@ symmetricFirstStep: no
 verbose: no
 
 
-Wed, February 08, 2023 03:36:53 PM: Start data validation on file COVID3_4Nodes3.txt.
-Wed, February 08, 2023 03:36:53 PM: End data validation on file COVID3_4Nodes3.txt.
+Wed, February 15, 2023 03:40:25 PM: Start data validation on file COVID3_4Nodes3.txt.
+Wed, February 15, 2023 03:40:25 PM: End data validation on file COVID3_4Nodes3.txt.
 There are 50000 cases and 4 variables.
 
-Wed, February 08, 2023 03:36:53 PM: Start reading in file COVID3_4Nodes3.txt.
-Wed, February 08, 2023 03:36:54 PM: Finished reading in file COVID3_4Nodes3.txt.
-Wed, February 08, 2023 03:36:54 PM: File COVID3_4Nodes3.txt contains 50000 cases, 4 variables.
+Wed, February 15, 2023 03:40:25 PM: Start reading in file COVID3_4Nodes3.txt.
+Wed, February 15, 2023 03:40:25 PM: Finished reading in file COVID3_4Nodes3.txt.
+Wed, February 15, 2023 03:40:25 PM: File COVID3_4Nodes3.txt contains 50000 cases, 4 variables.
 
-Start search: Wed, February 08, 2023 03:36:54 PM
-End search: Wed, February 08, 2023 03:36:54 PM
+Start search: Wed, February 15, 2023 03:40:25 PM
+End search: Wed, February 15, 2023 03:40:25 PM
 
 ================================================================================
 Graph Nodes:
