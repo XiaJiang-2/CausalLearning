@@ -69,18 +69,7 @@ def PC_Page():
         pcObject = PC.PC(fileName)
         os.remove(fileName)
         pcOutput = pcObject.output.split("\n")
-        finalPC = list()
-        for line in pcOutput:
-            newLine = line.split(" ")
-            newLine = [i for i in newLine if i != '']
-            i = 0
-            while i in range(len(newLine)):
-                newLine.insert(i+1, '\t')
-                i += 2
-            line = newLine
-            line = ' '.join(line)
-            finalPC.append(line)
-        return render_template("PC.html", Lines=finalPC)
+        return render_template("PC.html", Lines=pcOutput)
 
 @app.route("/rFCI", methods=['GET', 'POST'])
 def rFCI_Page():
