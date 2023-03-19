@@ -20,7 +20,8 @@ df = df.replace(to_replace='Negtive', value=0)
 df = df.replace(to_replace='Positive', value=1)
 
 # Create a PC object using the file location, it's output will be printed to the console
-# pcObject = PC.PC(fileLocation)
+pcObject = PC.PC(fileLocation)
+print(pcObject.output)
 
 # # Set the output location for the png of the GES output
 # GES_Output_location = 'C:/Users/17172/Desktop/CausalLearning/Outputs/GES_Output_Test.png'
@@ -35,11 +36,11 @@ df = df.replace(to_replace='Positive', value=1)
 # fciObject = FCI.FCI(df, FCI_Output_location)
 
 # Set the output location of the output file of the rFCI output
-rFCI_Output_location = 'templates/rFCI_Outputs'
-rFCI_Output_name = "rFCI_Output"
+# rFCI_Output_location = 'templates/rFCI_Outputs'
+# rFCI_Output_name = "rFCI_Output"
 
-# Create the rFCI object, it's output will be saved as a txt file to the output location specified above
-rfciObject = rFCI.rFCI(fileLocation, fileDelimiter, rFCI_Output_location, rFCI_Output_name)
+# # Create the rFCI object, it's output will be saved as a txt file to the output location specified above
+# rfciObject = rFCI.rFCI(fileLocation, fileDelimiter, rFCI_Output_location, rFCI_Output_name)
 
 # # Set the output location of the output file of the FGES output
 # FGES_Output_location = 'C:/Users/17172/Desktop/CausalLearning/Outputs'
